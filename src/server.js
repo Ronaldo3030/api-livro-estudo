@@ -16,6 +16,8 @@ mongoose.connection.on('error', error => {
     console.log("Erro: " + error.message);
 });
 
+const app = express();
+
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*")
     res.header(
@@ -30,7 +32,7 @@ app.use((req, res, next) => {
         return res.status(200).json({});
     }
     next();
-})
+});
 
 app.use(cors());
 app.use(express.json());
