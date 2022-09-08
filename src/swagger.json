@@ -1,0 +1,11 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Api livro Estudo",
+        "description": "Api para estudar mais sobre apis, sobre livros.",
+        "version": "1.0.0",
+        "contact": {
+            "email": "ronaldomacielcamposjunior@gmail.com"
+        }
+    }
+}
